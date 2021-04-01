@@ -1,0 +1,22 @@
+.text--title {
+  @include text--title;
+}
+
+.text--subtitle {
+  @include text--subtitle;
+}
+
+.text--body-m {
+  @include text--body-m;
+}
+
+.text--button {
+  @include text--button;
+}
+
+// //
+// // Link
+
+.text__a  {
+  @include text--body-m;
+}
