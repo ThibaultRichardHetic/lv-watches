@@ -1,17 +1,20 @@
 <template>
   <div class="home">
     <Header/>
+    <Hero/>
   </div>
 </template>
 
 <script>
 
 import Header from "@/components/03_organisms/Header/Header.vue";
+import Hero from "@/components/03_organisms/Hero/Hero.vue";
 
 export default {
   name: "Home",
   components: {
-    Header
+    Header,
+    Hero
   },
   data() {
     return {
