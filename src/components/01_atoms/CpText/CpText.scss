@@ -1,0 +1,19 @@
+.text--body-m {
+  color: var(--white);
+  font-family: 'Poppins', "Work Sans", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+.text--button-m {
+  color: var(--green-n1);
+  font-family: 'Poppins', "Work Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.1rem;
+
+  &.brand {
+    font-weight: 700;
+  }
+}

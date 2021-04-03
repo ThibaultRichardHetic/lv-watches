@@ -1,17 +1,17 @@
 <template>
   <div class="home">
-    <CpText tag="h1" type="">{{ text }}</CpText>
+    <Header/>
   </div>
 </template>
 
 <script>
 
-import CpText from "@/components/01_atoms/CpText/CpText.vue";
+import Header from "@/components/03_organisms/Header/Header.vue";
 
 export default {
   name: "Home",
   components: {
-    CpText
+    Header
   },
   data() {
     return {

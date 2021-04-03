@@ -1,21 +1,7 @@
-#app[data-theme="light"] {
+#app {
   /* COLOR */
-  --button-font-1: rgb(255, 255, 255);
-  --global-base: rgb(92, 176, 173);
-  --global-base-light: rgb(165, 231, 217);
-  --global-danger-base: rgb(211, 63, 40);
-  --global-danger-light: rgb(243, 206, 200);
-  --global-info: rgb(0, 143, 226);
-  --global-n-0: rgb(255, 255, 255);
-  --global-n-0: rgb(26, 35, 40);
-  --global-n-1: rgb(255, 255, 255);
-  --global-n-2: rgb(240, 245, 248);
-  --global-n-3: rgb(207, 219, 227);
-  --global-n-4: rgb(165, 179, 188);
-  --global-n-5: rgb(117, 135, 147);
-  --global-n-6: rgb(79, 100, 113);
-  --global-n-7: rgb(24, 50, 66);
-  --global-success: rgb(79, 198, 89);
-  --global-warning: rgb(255, 216, 0);
-  --surface-surface-1: rgb(255, 255, 255);
+  --white: rgb(255, 255, 255);
+  --green-n1: #182C2A;
+  --light: #EFF2EB;
+  --dark: #001210;
 }
