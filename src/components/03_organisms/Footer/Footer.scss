@@ -5,6 +5,10 @@
   padding-top: 72px;
   padding-bottom: 60px;
 
+  @include mq-down(md) {
+    padding-top: 64px;
+  }
+
   .footer__text {
     width: 130px;
     margin: auto;
@@ -26,8 +30,21 @@
     top: 38%;
     right: 10%;
 
+    @include mq-down(md) {
+      position: relative;
+      margin-top: 32px;
+      width: 70%;
+      right: 0;
+      margin: auto;
+      justify-content: space-between;
+    }
+
     .container--button-store {
       margin-left: 32px;
+
+      @include mq-down(md) {
+        margin-left: 0;
+      }
     }
   }
 }

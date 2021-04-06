@@ -5,6 +5,10 @@
   h3 {
     margin-left: 200px;
     margin-bottom: 32px;
+
+    @include mq-down(md) {
+      margin-left: 16px;
+    }
   }
 
   .slick-slider {
@@ -12,6 +16,10 @@
     margin: auto;
     display: flex;
     align-items: center;
+
+    @include mq-down(md) {
+      width: 100%;
+    }
 
     .slick-dots {
       display: none!important;
@@ -27,6 +35,11 @@
       position: relative;
       cursor: pointer;
 
+      @include mq-down(md) {
+        width: 38px;
+        height: 38px;
+      }
+
       &::after {
         content: '';
         background-image: url("../../../assets/images/chevron.svg");
@@ -37,6 +50,10 @@
         position: absolute;
         top: 25%;
         left: 30%;
+
+        @include mq-down(md) {
+          top: 15%;
+        }
       }
     }
 
@@ -47,6 +64,10 @@
     .slick-list {
       width: percent(1140, 1440);
       margin: auto;
+
+      @include mq-down(md) {
+        height: 480px;
+      }
     }
   }
 

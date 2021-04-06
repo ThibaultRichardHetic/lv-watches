@@ -4,6 +4,10 @@
     width: 100%;
     height: 760px;
     pointer-events: none;
+
+    @include mq-down(md) {
+      pointer-events: all;
+    }
   }
 
   .media__content {
@@ -22,6 +26,12 @@
     padding-top: 58px;
     padding-bottom: 58px;
     padding-left: 104px;
+
+    @include mq-down(md) {
+      width: 100%;
+      left: 0;
+      padding: 32px;
+    }
 
     .text--hero {
       margin-top: 8px;

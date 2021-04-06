@@ -9,7 +9,11 @@
         <div class="slide__content">
           <CpText type="description bold">{{ slide.title }}</CpText>
           <CpText type="slide">{{ slide.text }}</CpText>
-          <a href="https://fr.louisvuitton.com/fra-fr/produits/montre-connectee-tambour-horizon-monogram-eclipse-42-nvprod1380096v" target="_blank" class="button--plus">
+          <a
+            href="https://fr.louisvuitton.com/fra-fr/produits/montre-connectee-tambour-horizon-monogram-eclipse-42-nvprod1380096v"
+            target="_blank"
+            class="button--plus"
+          >
             <CpText>Voir plus</CpText>
           </a>
         </div>
@@ -39,8 +43,18 @@ export default {
         infinite: true,
         speed: 500,
         slidesToShow: 3,
-        slidesToScroll: 3,
-        touchThreshold: 5
+        slidesToScroll: 1,
+        touchThreshold: 5,
+        responsive: [
+          {
+            breakpoint: 780,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              infinite: true,
+            }
+          }
+        ]
       },
       slides: [
         {
@@ -62,16 +76,22 @@ export default {
             "Cadran au motif Lovelygram ajoute une touche d'amour et de romance à la Saint-Valentin"
         },
         {
-          img: "watch-3.png",
+          img: "watch-4.png",
           title: "#LVPRECOLL FALL 2020",
           text:
             "Louis Vuitton présente un cadran dédié à la précollection Homme Automne-Hiver 2020."
         },
         {
-          img: "watch-3.png",
-          title: "#LVPRECOLL FALL 2020",
+          img: "watch-5.png",
+          title: "ESSENTIAL BROWN",
           text:
-            "Louis Vuitton présente un cadran dédié à la précollection Homme Automne-Hiver 2020."
+            "Offrez à votre montre le cadran brun iconique de l'horlogerie Louis Vuitton."
+        },
+        {
+          img: "watch-6.png",
+          title: "VALENTINE’S DAY 2021",
+          text:
+            "Cadran au motif Lovelygram ajoute une touche d'amour et de romance à la Saint-Valentin"
         }
       ]
     };

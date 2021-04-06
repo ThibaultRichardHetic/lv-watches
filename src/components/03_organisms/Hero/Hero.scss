@@ -26,15 +26,35 @@
 
       display: flex;
 
+      @include mq-down(md) {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        padding: 16px;
+
+        img {
+          width: 64px;
+          height: 64px;
+        }
+      }
+
+
       .content {
         margin-left: 24px;
         width: 100%;
+
+        @include mq-down(md) {
+          margin-left: 16px;
+        }
 
         .downloads {
           margin-top: 24px;
           display: flex;
           .container--button-store {
             margin-right: 32px;
+            @include mq-down(md) {
+              margin-right: 16px;
+            }
           }
         }
       }
@@ -54,5 +74,10 @@
     margin: auto;
     margin-top: 96px;
     margin-bottom: 96px;
+
+    @include mq-down(md) {
+      width: 100%;
+      padding: 0 16px 0 16px;
+    }
   }
 }

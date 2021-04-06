@@ -15,11 +15,27 @@
   left: 0;
   top: 0;
 
+  @include mq-down(md) {
+    justify-content: space-between;
+  }
+
   a {
     text-decoration: none;
   }
 
   .container--button-store, .header__link {
     margin-left: 40px;
+  }
+
+  .header__link {
+    @include mq-down(md) {
+      display: none;
+    }
+  }
+
+  .container--button-store {
+    @include mq-down(md) {
+      margin-left: 0;
+    }
   }
 }
