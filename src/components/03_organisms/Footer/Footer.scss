@@ -1,0 +1,29 @@
+.container--footer {
+  background-color: var(--light);
+  width: 100%;
+  position: relative;
+  padding-top: 72px;
+  padding-bottom: 60px;
+
+  .footer__text {
+    width: 130px;
+    margin: auto;
+
+    .text--small {
+      margin-bottom: 16px;
+    }
+  }
+
+  .downloads {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    position: absolute;
+    top: 38%;
+    right: 10%;
+
+    .container--button-store {
+      margin-left: 32px;
+    }
+  }
+}
