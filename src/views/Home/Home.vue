@@ -2,6 +2,7 @@
   <div class="home">
     <Header/>
     <Hero/>
+    <Articles />
   </div>
 </template>
 
@@ -9,12 +10,14 @@
 
 import Header from "@/components/03_organisms/Header/Header.vue";
 import Hero from "@/components/03_organisms/Hero/Hero.vue";
+import Articles from "@/components/03_organisms/Articles/Articles.vue";
 
 export default {
   name: "Home",
   components: {
     Header,
-    Hero
+    Hero,
+    Articles
   },
   data() {
     return {
