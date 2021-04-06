@@ -24,6 +24,10 @@
   color: var(--green-n1);
   font-size: 2.5rem;
   line-height: 3.7rem;
+
+  &.bold {
+    font-weight: bold;
+  }
 }
 
 .text--hero-title {
@@ -32,6 +36,10 @@
 
   &.ogg {
     font-family: 'Ogg', "Work Sans", sans-serif;
+  }
+
+  &.green {
+    color: var(--green-n1);
   }
 }
 
@@ -44,6 +52,12 @@
   color: var(--light);
   font-size: 2rem;
   line-height: 3rem;
+}
+
+.text--slide {
+  color: var(--green-n1);
+  font-size: 1.6rem;
+  line-height: 2.4rem;
 }
 
 .text--small {

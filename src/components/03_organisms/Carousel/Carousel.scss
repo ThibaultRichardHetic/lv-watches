@@ -1,0 +1,88 @@
+.container--carousel {
+  padding-top: 96px;
+  padding-bottom: 96px;
+
+  h3 {
+    margin-left: 200px;
+    margin-bottom: 32px;
+  }
+
+  .slick-slider {
+    width: percent(1280, 1440);
+    margin: auto;
+    display: flex;
+    align-items: center;
+
+    .slick-dots {
+      display: none!important;
+    }
+
+    .slick-prev, .slick-next {
+      width: 52px;
+      height: 52px;
+      border-radius: 100%;
+      background-color: var(--green-n1);
+      color: transparent;
+      border: none;
+      position: relative;
+      cursor: pointer;
+
+      &::after {
+        content: '';
+        background-image: url("../../../assets/images/chevron.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 16px;
+        height: 26px;
+        position: absolute;
+        top: 25%;
+        left: 30%;
+      }
+    }
+
+    .slick-next {
+      transform: rotate(180deg);
+    }
+
+    .slick-list {
+      width: percent(1140, 1440);
+      margin: auto;
+    }
+  }
+
+  .slide {
+    .slide__img {
+      img {
+        display: block;
+        margin: auto;
+      }
+    }
+
+    .slide__content {
+      width: 264px;
+      margin: auto;
+      p {
+        text-align: center;
+      }
+
+      .text--description {
+        height: 76px;
+      }
+
+      .text--slide {
+        height: 72px;
+      }
+
+      .button--plus {
+        background-color: var(--dark);
+        border-radius: 8px;
+        display: block;
+        text-decoration: none;
+        padding: 8px 18px 8px 18px;
+        width: fit-content;
+        margin: auto;
+        margin-top: 24px;
+      }
+    }
+  }
+}
