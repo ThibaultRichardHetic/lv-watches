@@ -1,12 +1,12 @@
 <template>
   <div class="container--header">
-    <a class="header__link" href="">
+    <a class="header__link" href="#articles">
       <CpText>LV Watches</CpText>
     </a>
-    <a class="header__link" href="">
+    <a class="header__link" href="#collection">
       <CpText>Collection</CpText>
     </a>
-    <a class="header__link" href="">
+    <a class="header__link" href="#video">
       <CpText>Vidéo</CpText>
     </a>
     <ButtonStore brand="apple"/>

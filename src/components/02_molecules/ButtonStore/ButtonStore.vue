@@ -1,6 +1,6 @@
 <template>
   <div :class="`container--button-store ${color}`">
-    <CpLink>
+    <a :href="`${url}`" target="_blank">
       <div class="container--illu">
         <svg
           v-if="brand == 'apple'"
@@ -53,13 +53,12 @@
         <CpText v-if="brand == 'apple'" type="button-m brand">IOS</CpText>
         <CpText v-if="brand == 'android'" type="button-m brand">Android</CpText>
       </div>
-    </CpLink>
+    </a>
   </div>
 </template>
 
 <script>
 import CpText from "@/components/01_atoms/CpText/CpText.vue";
-import CpLink from "@/components/01_atoms/CpLink/CpLink.vue";
 
 export default {
   name: "ButtonStore",
@@ -74,8 +73,22 @@ export default {
     }
   },
   components: {
-    CpText,
-    CpLink
+    CpText
+  },
+  data() {
+    return {
+      urlAdroid: "https://play.google.com/store/",
+      urlApple: "https://www.apple.com/fr/ios/app-store/"
+    };
+  },
+  computed: {
+    url: function () {
+      if (this.brand == "apple") {
+        return this.urlApple;
+      } else {
+        return this.urlAdroid;
+      }
+    }
   }
 };
 </script>

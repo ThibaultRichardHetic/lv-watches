@@ -1,5 +1,5 @@
 <template>
-  <div class="container--media">
+  <div id="video" class="container--media">
     <iframe
       class="video"
       src="https://www.youtube.com/embed/E3tlWFyzG5o?autoplay=1&mute=1&controls=0&loop=1&showinfo=0&playlist=E3tlWFyzG5o&modestbranding=1&iv_load_policy=3"

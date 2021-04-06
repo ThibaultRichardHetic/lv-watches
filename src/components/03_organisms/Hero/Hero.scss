@@ -42,6 +42,10 @@
 
     .banner__img {
       transform: translate(-30px, 90px);
+      width: percent(288, 1440);
+      img {
+        width: 100%;
+      }
     }
   }
 

@@ -1,5 +1,5 @@
 <template>
-  <div class="container--carousel">
+  <div id="collection" class="container--carousel">
     <CpText tag="h3" type="hero-title ogg green">Collection</CpText>
     <VueSlickCarousel :arrows="true" :dots="true" v-bind="settings">
       <div v-for="slide in slides" :key="slide.title" class="slide">
@@ -9,7 +9,7 @@
         <div class="slide__content">
           <CpText type="description bold">{{ slide.title }}</CpText>
           <CpText type="slide">{{ slide.text }}</CpText>
-          <a href class="button--plus">
+          <a href="https://fr.louisvuitton.com/fra-fr/produits/montre-connectee-tambour-horizon-monogram-eclipse-42-nvprod1380096v" target="_blank" class="button--plus">
             <CpText>Voir plus</CpText>
           </a>
         </div>

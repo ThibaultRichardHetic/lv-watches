@@ -1,9 +1,15 @@
 <template>
   <div class="container--footer">
     <div class="footer__text">
-      <CpText type="small">Site Louis Vuitton</CpText>
-      <CpText type="small">Mentions Légales</CpText>
-      <CpText type="small">Cookies</CpText>
+      <a href="https://fr.louisvuitton.com/fra-fr/homepage/" target="_blank">
+        <CpText type="small">Site Louis Vuitton</CpText>
+      </a>
+      <a href=https://www.richard-thibault.com/ target="_blank">
+        <CpText type="small">Mentions Légales</CpText>
+      </a>
+      <a href=https://www.richard-thibault.com/ target="_blank">
+        <CpText type="small">Cookies</CpText>
+      </a>
     </div>
     <div class="downloads">
       <ButtonStore color="dark" brand="apple"/>
