@@ -4,6 +4,10 @@
     align-items: flex-end;
     height: 680px;
 
+    @include mq-down(med) {
+      justify-content: flex-end;
+    }
+
     .banner__video {
       background-image: url("../../../assets/images/hero.png");
       background-repeat: no-repeat;
@@ -20,7 +24,15 @@
       iframe {
         width: 100%;
         height: 215vh;
-        transform: translateY(-30vh);
+        transform: translateY(-50vh);
+        
+        @include mq-up(xl) {
+          transform: translateY(-30vh);
+        }
+
+        @include mq-down(med) {
+          transform: translateY(-70vh);
+        }
 
         @include mq-down(md) {
           width: 380%;
@@ -89,7 +101,7 @@
           width: 63%;
         }
       }
-      @include mq-down(md) {
+      @include mq-down(med) {
         display: none;
       }
     }
