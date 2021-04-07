@@ -21,6 +21,10 @@
       position: relative;
       margin-right: 16px;
 
+      @include mq-up(xl) {
+        margin-right: 72px;
+      }
+
       @include mq-down(md) {
         margin-bottom: 32px;
       }
@@ -34,6 +38,10 @@
       .text--hero-title {
         margin-bottom: 24px;
       }
+
+      @include mq-up(xl) {
+        width: 50%;
+      }
     }
 
     &.mid {
@@ -46,6 +54,10 @@
       .article__img {
         margin-right: 0;
         margin-left: 16px;
+
+        @include mq-up(xl) {
+          margin-left: 72px;
+        }
 
         @include mq-down(md) {
           margin-left: 0;

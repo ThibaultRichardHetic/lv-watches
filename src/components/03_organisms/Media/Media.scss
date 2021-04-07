@@ -1,5 +1,11 @@
 .container--media {
   position: relative;
+
+  @include mq-up(xl) {
+    height: 760px;
+    overflow: hidden;
+  }
+
   .video {
     width: 100%;
     height: 760px;

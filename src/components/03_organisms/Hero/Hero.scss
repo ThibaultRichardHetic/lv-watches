@@ -85,6 +85,12 @@
       width: percent(288, 1440);
       img {
         width: 100%;
+        @include mq-up(xl) {
+          width: 63%;
+        }
+      }
+      @include mq-down(md) {
+        display: none;
       }
     }
   }
