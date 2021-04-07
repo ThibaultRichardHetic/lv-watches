@@ -1,14 +1,12 @@
 .container--media {
   position: relative;
 
-  @include mq-up(xl) {
     height: 760px;
     overflow: hidden;
-  }
 
   .video {
     width: 100%;
-    height: 760px;
+    height: 761px;
     pointer-events: none;
 
     @include mq-down(md) {
@@ -28,7 +26,7 @@
     position: absolute;
     width: 50%;
     right: 0;
-    bottom: 0;
+    bottom: -2px;
     padding-top: 58px;
     padding-bottom: 58px;
     padding-left: 104px;
