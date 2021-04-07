@@ -55,7 +55,7 @@ export default {
           title: "Paiement sans contact",
           content:
             "Votre temps est précieux, nous le savons. Votre montre est conçu afin de vous permettre d’en perdre le moins possible dans vos tâches quotidiennes. Paiement sans contact avec les services Android Pay™ et Alipay™."
-        },
+        }
       ],
       text: "Louis vuitton test"
     };
